@@ -42,15 +42,13 @@ export const VideoPlayer = memo(({videoUrl, muted, autoPlay}) => {
           className="progressBar"
           ref={progressRef}
         />
-        {Boolean(progress) && (
-           <div
-             className="control"
-             ref={controlRef}
-             onTouchStart={handleTouchStart}
-             onTouchMove={handleTouchMove}
-             onTouchEnd={handleTouchEnd}
-           />
-        )}
+          <div
+            className="control"
+            ref={controlRef}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          />
       </div>
     </div>
   )
